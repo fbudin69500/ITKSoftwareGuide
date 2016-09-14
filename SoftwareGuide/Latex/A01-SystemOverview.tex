@@ -859,6 +859,16 @@ containing .dll files for an ITK build at
 \code{Release} configuration is
 \code{C:\textbackslash{}ITK-build\textbackslash{}bin\textbackslash{}Release}.
 
+If ITK is installed, Python wrappers will be installed in the Python library
+directory specified by the CMake option \code{PY\_SITE\_PACKAGES\_PATH}
+(typically \code{lib/python2.7/site-packages}) inside the folder given by the
+CMake option \code{CMAKE\_INSTALL\_PREFIX}. If a virtual environment is being used,
+\code{CMAKE\_INSTALL\_PREFIX} can be modified to point to the folder corresponding
+to that environment. If ITK is built with the CMake option \code{BUILD\_SHARED\_LIBS}
+enabled, it will be necessary to add the installation directory containing the shared
+objects to the correct environment variable (on Windows \code{PATH}; on Linux
+\code{LD\_LIBRARY\_PATH}; on MacOS \code{DYLD\_LIBRARY\_PATH}).
+
 % Add this back once wrappings support Python 3
 %Virtualenv is built into Python3, and can be used with the \code{pyvenv} command instead of
 %\code{virtualenv} as in the example above.
