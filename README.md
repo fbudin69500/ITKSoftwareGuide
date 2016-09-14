@@ -21,10 +21,11 @@ Windows platforms:
  - ImageMagick
    Windows installer can be found here: http://www.imagemagick.org/.
  - LaTeX and BibTeX
-   See the preamble of the LaTeX/00-SoftwareGuide.tex file for the full list of
-   required LaTeX packages. Among these packages Minted package for syntax
-   highlighting in its turn depends on a Python package Pygments. Instructions
-   for installing Minted and Pygments packages on Windows are available here:
+   See the preamble of the SoftwareGuide/Latex/00-Preamble-Common.tex file for
+   the full list of required LaTeX packages. Among these packages Minted package
+   for syntax highlighting in its turn depends on a Python package Pygments.
+   Instructions for installing Minted and Pygments packages on Windows are
+   available here:
    https://minted.googlecode.com/files/minted.pdf.
  - dvips, ps2pdf
    While on Linux platforms these tools are usually included with most
